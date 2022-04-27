@@ -11,5 +11,8 @@
     <select id="selectIdIntegerUserMap" resultType="java.util.Map" parameterType="java.lang.String">
         select * from t_user where id = #{id}
     </select>
+    <select id="selectPageVo" resultType="com.wdh.mybatisplus.pojo.User">
+        select * from t_user where age > #{age}
+    </select>
 
 </mapper>
