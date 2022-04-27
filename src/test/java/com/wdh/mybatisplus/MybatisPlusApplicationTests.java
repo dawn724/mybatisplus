@@ -91,4 +91,11 @@ class MybatisPlusApplicationTests {
         }
         userService.saveBatch(users);
     }
+
+    @Test
+    void userTest(){
+        // 逻辑删除
+        // 把对应的逻辑删除字段改变
+        int i = userMapper.deleteById(1519135012160868372L);
+    }
 }
