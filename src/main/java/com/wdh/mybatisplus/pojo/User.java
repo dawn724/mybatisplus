@@ -1,6 +1,7 @@
 package com.wdh.mybatisplus.pojo;
 
 import com.baomidou.mybatisplus.annotation.*;
+import com.wdh.mybatisplus.enumAttribute.Sex;
 import lombok.Data;
 
 @Data
@@ -25,5 +26,8 @@ public class User {
     // 之后的所有增删改都会判断这个字段是否为0（未删除字段）
     @TableLogic(value = "0",delval = "1")
     private Integer isDeleted;
+
+    // 通用枚举
+    private Sex sex;
 
 }
